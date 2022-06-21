@@ -1,0 +1,45 @@
+{
+  "name": "example-publish-npm-ks",
+  "version": "0.0.0-development",
+  "description": "A repo showing how to publish a node repo into npm using github actions",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=true NODE_ENV=development nodemon index.js",
+    "start": "DEBUG=true NODE_ENV=stage nodemon index.js",
+    "lint": "eslint --ext .js ./",
+    "lint:fix": "eslint --fix --ext .js ./",
+    "semantic-release": "semantic-release --branches main",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "example",
+    "publish",
+    "npm",
+    "publish",
+    "github",
+    "actions",
+    "actions"
+  ],
+  "author": "Kuldip Soliya",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "nodemon": "2.0.4",
+    "prettier": "2.0.5",
+    "semantic-release": "^19.0.3"
+  },
+  "dependencies": {
+    "pino": "^6.3.2",
+    "pino-pretty": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuldip-simform/npm-publish.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
