@@ -16,7 +16,7 @@ function welcome() {
   return welcomeMessage;
 }
 // making change in init feat breaking change
-// making this changes for checking issue number in git hub via commitizen
+// making this changes for checking issue number in git hub via   commitizen
 module.exports = {
   welcome,
 };
